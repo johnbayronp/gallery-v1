@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema; // Constructor de esquemas
 
-mongoose.connect('mongodb://localhost/fotos');
+mongoose.connect('mongodb://localhost/fotos'); //conectar la base de datos , localhost/"nombre_de_la_base_de_datos" 
 
 var user_schema = new Schema({ // Crea un objeto 
  name:String,
