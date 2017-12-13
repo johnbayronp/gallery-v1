@@ -1,7 +1,7 @@
 {
-  "name": "proyecto",
+  "name": "gallery-v1.0",
   "version": "1.0.0",
-  "description": "",
+  "description": "galery de usuarios ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,8 +9,9 @@
   "author": "John Perez",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.2", // body-parser packge middleware (parser)
+    "body-parser": "^1.18.2",
     "express": "^4.16.2",
-    "jade": "^1.11.0"
+    "jade": "^1.11.0",
+    "mongoose": "^4.13.7"
   }
 }
