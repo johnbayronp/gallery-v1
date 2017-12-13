@@ -4,7 +4,6 @@ var app = express();
 var usuarios = require('./models/user').usuario;
 
 
-
 app.use("/archivos", express.static('public')); // para montar un middleware, static() retorna el middle.. 
 app.use(express.static('assets'));
 
@@ -30,9 +29,15 @@ app.get("/login",function(req,res){
 
 
 app.post("/users" , function(req,res){
-	var user = new usuarios({ email: req.body.email, password: req.body.password}); 
+	var user = new usuarios({ email: req.body.email, 
+		                password: req.body.password,
+		                password_confirmation: req.body.password_confirmation
+		            }); 
 	
+	console.log(user.password_confirmation);
+
 	user.save(function(){
+		
 		res.send("Datos , validados!");
 	});
 	
