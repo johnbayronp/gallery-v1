@@ -4,12 +4,15 @@ block contenido
   form(action="/users", method="POST")
     div(class="form-group")
       label(for="email") Email 
-      input(type ="email" , name="email" , placeholder="Email", id="email" class="form-control")
+      input(type ="email" , name="email" , placeholder="Email",class="form-control", id="email")
     div(class="form-group")
-      label(for="password") Password  
-      input(type="password", name="password" , placeholder="password"  ,  id ="password", class="form-control")
+      label(for="username") Usuarios
+      input(type ="text" , name="username" , placeholder="Nombre de usuario", class="form-control", id="username")
     div(class="form-group")
-      label(for="password") Confirma tu password  
-      input(type="password", name="password_confirmation" , placeholder="repeat password"  ,  id ="password_confirmation", class="form-control")
+      label(for="password") Contraseña  
+      input(type="password", name="password" , placeholder="Contraseña" , class="form-control", id="password")
+    div(class="form-group")
+      label(for="password_confirmation") Confirma tu contraseña  
+      input(type="password", name="password_confirmation" , placeholder="Confirme su contraseña" , class="form-control", id="password_confirmation")
     div
       input(type="submit", value="Iniciar Sesión" ,class="btn btn-info")

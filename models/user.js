@@ -16,7 +16,7 @@ var password_validation = { //valida si las contraseñas son iguales
 
 var user_schema = new Schema({ // Crea un objeto 
  name:String,
- username: {type:String, required: true , maxlength:[50,"Username es muy grande"]},
+ username: {type:String, required:"introduce tu usuario" , maxlength:[50,"Username es muy grande"]},
  password: {type:String,
   minlength:[10,"El password es muy corto"],validate:password_validation}, // validaciones para la password
  age: {type:Number, min:[5, "la edad no puede ser menor que 5"],max:[80,"la edad es muy alta"]}, //validaciones y escribir un mensaje{type:xxx , atributo:[x,"message"]}
